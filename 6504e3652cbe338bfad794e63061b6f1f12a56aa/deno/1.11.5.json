@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmer",
-        "version": "2.0.0"
+        "name": "deno",
+        "version": "1.11.5"
     },
     "results": [
         {
@@ -16,8 +16,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -36,13 +36,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/start.wasm",
@@ -81,8 +81,8 @@
         },
         {
             "path": "libstd/fs_rename.wasm",
-            "status": "FAIL",
-            "message": "thread 'main' panicked at 'assertion failed: fs::rename(old_path, new_path).is_ok()', fs_rename.rs:7:3\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nerror: failed to run `fs_rename.wasm`\n│   1: WASI execution failed\n│   2: failed to run WASI `_start` function\n│   3: RuntimeError: unreachable\n           at __rust_start_panic (fs_rename.wasm[177]:0x6f26)\n           at rust_panic (fs_rename.wasm[169]:0x6a7e)\n           at std::panicking::rust_panic_with_hook::h7d1c07b3a075203c (fs_rename.wasm[162]:0x6614)\n           at std::panicking::begin_panic_handler::{{closure}}::h3513767ae6c4d95c (fs_rename.wasm[148]:0x5c46)\n           at std::sys_common::backtrace::__rust_end_short_backtrace::h0bbf8ae75ca302c2 (fs_rename.wasm[147]:0x5bb5)\n           at rust_begin_unwind (fs_rename.wasm[161]:0x64b8)\n           at core::panicking::panic_fmt::h2e0bed4f7ae7c673 (fs_rename.wasm[243]:0xc6f6)\n           at core::panicking::panic::h490589746d5ff002 (fs_rename.wasm[236]:0xbc33)\n           at fs_rename::main::hfa55805f157a5dac (fs_rename.wasm[22]:0x943)\n           at core::ops::function::FnOnce::call_once::he409f29f0348113c (fs_rename.wasm[27]:0xa50)\n           at std::sys_common::backtrace::__rust_begin_short_backtrace::hcff11f25363b11fd (fs_rename.wasm[57]:0x11e6)\n           at std::rt::lang_start::{{closure}}::hb3e4afbc1d552246 (fs_rename.wasm[43]:0xde2)\n           at std::rt::lang_start_internal::h1e63ab493c96e529 (fs_rename.wasm[170]:0x6b29)\n           at std::rt::lang_start::h9c23d6e39c9eb30e (fs_rename.wasm[42]:0xdb6)\n           at __original_main (fs_rename.wasm[23]:0x976)\n           at _start (fs_rename.wasm[8]:0x3e6)\n           at _start.command_export (fs_rename.wasm[309]:0x1025f)\n╰─> 4: unreachable\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libstd/io_stderr-hello.wasm",
@@ -112,7 +112,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-07-04 00:58:29.479153042 +0000\n+++ /tmp/tmp.sKRog1MrjT/status\t2021-07-04 00:58:34.951351722 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-07-04 00:58:30.469123010 +0000\n+++ /tmp/tmp.IzhVvLu9XC/status\t2021-07-04 00:58:34.449146433 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
@@ -177,7 +177,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-07-04 00:58:29.479153042 +0000\n+++ /tmp/tmp.JTT4lzKqvn/status\t2021-07-04 00:58:35.515374548 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-07-04 00:58:30.469123010 +0000\n+++ /tmp/tmp.LUCHc4vnKg/status\t2021-07-04 00:58:35.225151942 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/ftruncate.wasm",
