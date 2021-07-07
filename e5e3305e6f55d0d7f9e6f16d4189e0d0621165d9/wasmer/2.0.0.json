@@ -1,0 +1,213 @@
+{
+    "runtime": {
+        "name": "wasmer",
+        "version": "2.0.0"
+    },
+    "results": [
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'assertion failed: fs::rename(old_path, new_path).is_ok()', fs_rename.rs:7:3\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nerror: failed to run `fs_rename.wasm`\n│   1: WASI execution failed\n│   2: failed to run WASI `_start` function\n│   3: RuntimeError: unreachable\n           at __rust_start_panic (fs_rename.wasm[177]:0x6f26)\n           at rust_panic (fs_rename.wasm[169]:0x6a7e)\n           at std::panicking::rust_panic_with_hook::h7d1c07b3a075203c (fs_rename.wasm[162]:0x6614)\n           at std::panicking::begin_panic_handler::{{closure}}::h3513767ae6c4d95c (fs_rename.wasm[148]:0x5c46)\n           at std::sys_common::backtrace::__rust_end_short_backtrace::h0bbf8ae75ca302c2 (fs_rename.wasm[147]:0x5bb5)\n           at rust_begin_unwind (fs_rename.wasm[161]:0x64b8)\n           at core::panicking::panic_fmt::h2e0bed4f7ae7c673 (fs_rename.wasm[243]:0xc6f6)\n           at core::panicking::panic::h490589746d5ff002 (fs_rename.wasm[236]:0xbc33)\n           at fs_rename::main::hfa55805f157a5dac (fs_rename.wasm[22]:0x943)\n           at core::ops::function::FnOnce::call_once::he409f29f0348113c (fs_rename.wasm[27]:0xa50)\n           at std::sys_common::backtrace::__rust_begin_short_backtrace::hcff11f25363b11fd (fs_rename.wasm[57]:0x11e6)\n           at std::rt::lang_start::{{closure}}::hb3e4afbc1d552246 (fs_rename.wasm[43]:0xde2)\n           at std::rt::lang_start_internal::h1e63ab493c96e529 (fs_rename.wasm[170]:0x6b29)\n           at std::rt::lang_start::h9c23d6e39c9eb30e (fs_rename.wasm[42]:0xdb6)\n           at __original_main (fs_rename.wasm[23]:0x976)\n           at _start (fs_rename.wasm[8]:0x3e6)\n           at _start.command_export (fs_rename.wasm[309]:0x1025f)\n╰─> 4: unreachable\n"
+        },
+        {
+            "path": "libstd/io_stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_file_create.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "FAIL",
+            "message": "--- abort.status\t2021-07-07 11:25:17.769776282 +0000\n+++ /tmp/tmp.KGlFEl2r4r/status\t2021-07-07 11:25:23.417785903 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-true.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-parent.wasm",
+            "status": "FAIL",
+            "message": "Assertion failed: errno == ENOTCAPABLE (fopen-parent.c: main: 8)\nerror: failed to run `fopen-parent.wasm`\n│   1: WASI execution failed\n│   2: failed to run WASI `_start` function\n│   3: RuntimeError: unreachable\n           at abort (fopen-parent.wasm[16]:0x3d6)\n           at __assert_fail (fopen-parent.wasm[17]:0x428)\n           at __original_main (fopen-parent.wasm[12]:0x393)\n           at _start (fopen-parent.wasm[11]:0x27a)\n╰─> 4: unreachable\n"
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2021-07-07 11:25:17.769776282 +0000\n+++ /tmp/tmp.G6CSwj5Hlg/status\t2021-07-07 11:25:23.949788795 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        }
+    ]
+}
