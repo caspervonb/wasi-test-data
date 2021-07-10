@@ -1,0 +1,263 @@
+{
+    "runtime": {
+        "name": "wasmtime",
+        "version": "0.28.0"
+    },
+    "results": [
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-file.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Custom { kind: Other, error: \"failed to find a pre-opened file descriptor through which \\\"fs_metadata-file/file\\\" could be opened\" }', fs_metadata-file.rs:4:56\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_metadata-file.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: wasm trap: unreachable\n       wasm backtrace:\n           0: 0x7d36 - <unknown>!__rust_start_panic\n           1: 0x7a9f - <unknown>!rust_panic\n           2: 0x7635 - <unknown>!std::panicking::rust_panic_with_hook::h7d1c07b3a075203c\n           3: 0x6c95 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h3513767ae6c4d95c\n           4: 0x6bd6 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h0bbf8ae75ca302c2\n           5: 0x74d9 - <unknown>!rust_begin_unwind\n           6: 0xd5c5 - <unknown>!core::panicking::panic_fmt::h2e0bed4f7ae7c673\n           7: 0xe2da - <unknown>!core::result::unwrap_failed::h9a191c82353b6b6a\n           8: 0x1527 - <unknown>!core::result::Result<T,E>::unwrap::hd24ee156dd54855e\n           9:  0xd41 - <unknown>!fs_metadata_file::main::h368d1f6fdda2335a\n          10:  0x958 - <unknown>!core::ops::function::FnOnce::call_once::h4f5417359f2a5a5a\n          11:  0x88c - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h99bf667228d29d12\n          12: 0x16b3 - <unknown>!std::rt::lang_start::{{closure}}::h45c8dade1c01a6b3\n          13: 0x7b4a - <unknown>!std::rt::lang_start_internal::h1e63ab493c96e529\n          14: 0x1687 - <unknown>!std::rt::lang_start::h8f3cba592b86a9a9\n          15:  0xdd3 - <unknown>!__original_main\n          16:  0x400 - <unknown>!_start\n          17: 0x111bc - <unknown>!_start.command_export\n       note: run with `WASMTIME_BACKTRACE_DETAILS=1` environment variable to display more information\n       \n"
+        },
+        {
+            "path": "libstd/io_stdout-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-file.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-new-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-existing-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_file_create.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-directory-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-working-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-true.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        }
+    ]
+}

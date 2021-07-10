@@ -1,0 +1,263 @@
+{
+    "runtime": {
+        "name": "deno",
+        "version": "1.11.5"
+    },
+    "results": [
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-file.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Custom { kind: Other, error: \"failed to find a pre-opened file descriptor through which \\\"fs_metadata-file/file\\\" could be opened\" }', fs_metadata-file.rs:4:56\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n\u001b[0m\u001b[1m\u001b[31merror\u001b[0m: Uncaught RuntimeError: unreachable\n    at \u001b[0m\u001b[1m\u001b[3m__rust_start_panic\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m32055\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3mrust_panic\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m31392\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN3std9panicking20rust_panic_with_hook17h7d1c07b3a075203cE\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m30262\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN3std9panicking19begin_panic_handler28_$u7b$$u7b$closure$u7d$$u7d$17h3513767ae6c4d95cE\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m27798\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN3std10sys_common9backtrace26__rust_end_short_backtrace17h0bbf8ae75ca302c2E\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m27607\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3mrust_begin_unwind\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m29914\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN4core9panicking9panic_fmt17h2e0bed4f7ae7c673E\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m54726\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN4core6result13unwrap_failed17h9a191c82353b6b6aE\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m58075\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN4core6result19Result$LT$T$C$E$GT$6unwrap17hd24ee156dd54855eE\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m5416\u001b[0m)\n    at \u001b[0m\u001b[1m\u001b[3m_ZN16fs_metadata_file4main17h368d1f6fdda2335aE\u001b[0m (\u001b[0m\u001b[36mwasm://wasm/006bbe72\u001b[0m:\u001b[0m\u001b[33m1\u001b[0m:\u001b[0m\u001b[33m3394\u001b[0m)\n"
+        },
+        {
+            "path": "libstd/io_stdout-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-file.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-new-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-existing-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_file_create.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "FAIL",
+            "message": "--- abort.status\t2021-07-10 00:56:47.799082507 +0000\n+++ /tmp/tmp.P1XNKxB9eh/status\t2021-07-10 00:56:52.003136369 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-directory-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-working-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-true.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2021-07-10 00:56:47.799082507 +0000\n+++ /tmp/tmp.7p4e4R9Xyc/status\t2021-07-10 00:56:52.739145779 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        }
+    ]
+}

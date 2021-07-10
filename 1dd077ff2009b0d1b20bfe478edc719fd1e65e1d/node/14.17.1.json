@@ -1,0 +1,263 @@
+{
+    "runtime": {
+        "name": "node",
+        "version": "14.17.1"
+    },
+    "results": [
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-file.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Custom { kind: Other, error: \"failed to find a pre-opened file descriptor through which \\\"fs_metadata-file/file\\\" could be opened\" }', fs_metadata-file.rs:4:56\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nwasi.js:134\n        throw err;\n        ^\n\nRuntimeError: unreachable\n    at __rust_start_panic (<anonymous>:wasm-function[188]:0x7d36)\n    at rust_panic (<anonymous>:wasm-function[181]:0x7a9f)\n    at _ZN3std9panicking20rust_panic_with_hook17h7d1c07b3a075203cE (<anonymous>:wasm-function[174]:0x7635)\n    at _ZN3std9panicking19begin_panic_handler28_$u7b$$u7b$closure$u7d$$u7d$17h3513767ae6c4d95cE (<anonymous>:wasm-function[160]:0x6c95)\n    at _ZN3std10sys_common9backtrace26__rust_end_short_backtrace17h0bbf8ae75ca302c2E (<anonymous>:wasm-function[159]:0x6bd6)\n    at rust_begin_unwind (<anonymous>:wasm-function[173]:0x74d9)\n    at _ZN4core9panicking9panic_fmt17h2e0bed4f7ae7c673E (<anonymous>:wasm-function[254]:0xd5c5)\n    at _ZN4core6result13unwrap_failed17h9a191c82353b6b6aE (<anonymous>:wasm-function[274]:0xe2da)\n    at _ZN4core6result19Result$LT$T$C$E$GT$6unwrap17hd24ee156dd54855eE (<anonymous>:wasm-function[43]:0x1527)\n    at _ZN16fs_metadata_file4main17h368d1f6fdda2335aE (<anonymous>:wasm-function[39]:0xd41)\n"
+        },
+        {
+            "path": "libstd/io_stdout-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-file.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-new-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-existing-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_file_create.wasm",
+            "status": "FAIL",
+            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at _ZN4wasi13lib_generated9path_open17hd1695ba87d2783caE (<anonymous>:wasm-function[211]:0x8529)\n    at _ZN3std3sys4wasi2fs7open_at17h2de3fad252ea22cdE (<anonymous>:wasm-function[147]:0x5c2c)\n    at _ZN3std2fs11OpenOptions5_open17h7333a706ebc90c00E (<anonymous>:wasm-function[153]:0x5e27)\n    at _ZN3std2fs11OpenOptions4open17hf5f07dd221f37544E (<anonymous>:wasm-function[48]:0xfc1)\n    at _ZN3std2fs4File6create17h112f9fe55fa86f30E (<anonymous>:wasm-function[49]:0x10ad)\n    at _ZN14fs_file_create4main17hdd63c8346158d6e4E (<anonymous>:wasm-function[42]:0xcef)\n    at _ZN4core3ops8function6FnOnce9call_once17ha77507189c06c4b7E (<anonymous>:wasm-function[27]:0x9cb)\n    at _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h9e43890ac5cb6755E (<anonymous>:wasm-function[24]:0x8ff)\n    at _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h8e8a3abe71ad3b05E (<anonymous>:wasm-function[56]:0x1b9c)\n    at _ZN3std2rt19lang_start_internal17h1e63ab493c96e529E (<anonymous>:wasm-function[199]:0x81bb)\n"
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "FAIL",
+            "message": "--- abort.status\t2021-07-10 00:56:48.116027249 +0000\n+++ /tmp/tmp.HHDm0qZWzZ/status\t2021-07-10 00:56:51.716074046 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-directory-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-working-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-true.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "FAIL",
+            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __clock_gettime (<anonymous>:wasm-function[8]:0x269)\n    at __original_main (<anonymous>:wasm-function[7]:0x1ec)\n    at _start (<anonymous>:wasm-function[6]:0x186)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n"
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "FAIL",
+            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __clock_gettime (<anonymous>:wasm-function[8]:0x269)\n    at __original_main (<anonymous>:wasm-function[7]:0x1ec)\n    at _start (<anonymous>:wasm-function[6]:0x186)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n"
+        },
+        {
+            "path": "libc/fopen-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2021-07-10 00:56:48.116027249 +0000\n+++ /tmp/tmp.4RI55pqRVm/status\t2021-07-10 00:56:52.736087306 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "FAIL",
+            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __wasilibc_openat_nomode (<anonymous>:wasm-function[29]:0x3635)\n    at open (<anonymous>:wasm-function[30]:0x36f2)\n    at __original_main (<anonymous>:wasm-function[14]:0x376)\n    at _start (<anonymous>:wasm-function[13]:0x29f)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n"
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        }
+    ]
+}
