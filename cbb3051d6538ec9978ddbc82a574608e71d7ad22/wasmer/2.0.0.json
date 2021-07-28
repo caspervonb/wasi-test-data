@@ -167,7 +167,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-07-27 01:00:19.412766487 +0000\n+++ /tmp/tmp.filIoT2QFt/status\t2021-07-27 01:00:26.060873748 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-07-28 01:01:05.721961018 +0000\n+++ /tmp/tmp.Hhd358U2Wj/status\t2021-07-28 01:01:12.486058552 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
@@ -247,7 +247,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-07-27 01:00:19.412766487 +0000\n+++ /tmp/tmp.MgNwg5tQ2H/status\t2021-07-27 01:00:26.700892191 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-07-28 01:01:05.721961018 +0000\n+++ /tmp/tmp.mzOFKNudgn/status\t2021-07-28 01:01:13.126066244 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/ftruncate.wasm",
