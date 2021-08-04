@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "deno",
-        "version": "1.12.2"
+        "name": "wasmtime",
+        "version": "0.29.0"
     },
     "results": [
         {
@@ -156,8 +156,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2021-08-04 00:57:55.412238509 +0000\n+++ /tmp/tmp.M3Kw45B3Wa/status\t2021-08-04 00:57:59.516254580 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/stderr-hello.wasm",
@@ -181,8 +181,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2021-08-04 00:57:55.412238509 +0000\n+++ /tmp/tmp.2jND4YrJys/status\t2021-08-04 00:57:59.752254842 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/fopen-directory-parent-directory.wasm",
@@ -221,8 +221,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -241,13 +241,13 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/start.wasm",
