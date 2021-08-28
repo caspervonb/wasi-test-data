@@ -157,7 +157,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-08-27 01:01:36.630990508 +0000\n+++ /tmp/tmp.cflXw9psi9/status\t2021-08-27 01:01:40.583197854 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-08-28 00:54:17.288746585 +0000\n+++ /tmp/tmp.zz6dLwGyU6/status\t2021-08-28 00:54:21.204936956 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stderr-hello.wasm",
@@ -182,7 +182,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-08-27 01:01:36.630990508 +0000\n+++ /tmp/tmp.qP02jom2GZ/status\t2021-08-27 01:01:40.915215326 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-08-28 00:54:17.288746585 +0000\n+++ /tmp/tmp.qziE9T8GaI/status\t2021-08-28 00:54:21.556954068 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-directory-parent-directory.wasm",
