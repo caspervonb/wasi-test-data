@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "14.17.6"
+        "name": "wasmtime",
+        "version": "0.30.0"
     },
     "results": [
         {
@@ -51,8 +51,8 @@
         },
         {
             "path": "libc/clock_gettime-monotonic.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __clock_gettime (<anonymous>:wasm-function[8]:0x269)\n    at __original_main (<anonymous>:wasm-function[7]:0x1ec)\n    at _start (<anonymous>:wasm-function[6]:0x186)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1072:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)\n    at Module.load (internal/modules/cjs/loader.js:937:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:778:12)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/getentropy.wasm",
@@ -81,8 +81,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2021-09-18 00:58:55.773941140 +0000\n+++ /tmp/tmp.wDIWOLwL3a/status\t2021-09-18 00:58:57.609961580 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/fopen-directory-parent-directory.wasm",
@@ -121,8 +121,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2021-09-18 00:58:55.773941140 +0000\n+++ /tmp/tmp.M9foxnQqAO/status\t2021-09-18 00:58:58.065966643 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/exit-failure.wasm",
@@ -136,8 +136,8 @@
         },
         {
             "path": "libc/ftruncate.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __wasilibc_openat_nomode (<anonymous>:wasm-function[29]:0x3635)\n    at open (<anonymous>:wasm-function[30]:0x36f2)\n    at __original_main (<anonymous>:wasm-function[14]:0x376)\n    at _start (<anonymous>:wasm-function[13]:0x29f)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1072:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)\n    at Module.load (internal/modules/cjs/loader.js:937:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:778:12)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/exit-success.wasm",
@@ -146,8 +146,8 @@
         },
         {
             "path": "libc/clock_gettime-realtime.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __clock_gettime (<anonymous>:wasm-function[8]:0x269)\n    at __original_main (<anonymous>:wasm-function[7]:0x1ec)\n    at _start (<anonymous>:wasm-function[6]:0x186)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1072:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)\n    at Module.load (internal/modules/cjs/loader.js:937:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:778:12)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libstd/process_exit-0.wasm",
@@ -201,8 +201,8 @@
         },
         {
             "path": "libstd/fs_file_create.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at _ZN4wasi13lib_generated9path_open17h9feb747e4aa740b1E (<anonymous>:wasm-function[212]:0x8920)\n    at _ZN3std3sys4wasi2fs7open_at17hc914813bc29d7e8dE (<anonymous>:wasm-function[151]:0x5f25)\n    at _ZN3std2fs11OpenOptions5_open17haefd39a2eaabea2dE (<anonymous>:wasm-function[157]:0x6125)\n    at _ZN3std2fs11OpenOptions4open17h13d05f982212ae87E (<anonymous>:wasm-function[42]:0x1660)\n    at _ZN3std2fs4File6create17h7786d0c6fab8922eE (<anonymous>:wasm-function[43]:0x174c)\n    at _ZN14fs_file_create4main17hc8a4b7c2e30aa020E (<anonymous>:wasm-function[26]:0xa0c)\n    at _ZN4core3ops8function6FnOnce9call_once17h0504b305fbeb1e2fE (<anonymous>:wasm-function[48]:0x19de)\n    at _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h63b579a8c80167f5E (<anonymous>:wasm-function[29]:0xb9d)\n    at _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h7961e931b896cd13E (<anonymous>:wasm-function[61]:0x1ce3)\n    at _ZN3std2rt19lang_start_internal17h5bea5f20bb9c1526E (<anonymous>:wasm-function[200]:0x855b)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libstd/env_vars-many.wasm",
