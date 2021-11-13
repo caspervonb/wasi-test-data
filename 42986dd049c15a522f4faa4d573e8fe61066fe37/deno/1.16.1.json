@@ -27,7 +27,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-11-12 01:02:32.428742971 +0000\n+++ /tmp/tmp.VDXCkPm2Sz/status\t2021-11-12 01:02:36.792728840 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-11-13 00:59:54.721236956 +0000\n+++ /tmp/tmp.YStvyD9WG6/status\t2021-11-13 00:59:57.829293966 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdin-hello.wasm",
@@ -47,7 +47,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-11-12 01:02:32.428742971 +0000\n+++ /tmp/tmp.t41YHBexV4/status\t2021-11-12 01:02:37.068727946 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-11-13 00:59:54.721236956 +0000\n+++ /tmp/tmp.rV1872ovd2/status\t2021-11-13 00:59:58.125299402 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stderr-hello.wasm",
