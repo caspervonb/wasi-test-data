@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "14.18.1"
+        "name": "deno",
+        "version": "1.16.2"
     },
     "results": [
         {
@@ -16,8 +16,8 @@
         },
         {
             "path": "libc/clock_gettime-monotonic.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __clock_gettime (<anonymous>:wasm-function[8]:0x269)\n    at __original_main (<anonymous>:wasm-function[7]:0x1ec)\n    at _start (<anonymous>:wasm-function[6]:0x186)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/fopen-working-directory.wasm",
@@ -27,7 +27,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-11-18 01:01:44.370222109 +0000\n+++ /tmp/tmp.E0S64gFQNE/status\t2021-11-18 01:01:46.378196923 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-11-18 01:01:44.227258952 +0000\n+++ /tmp/tmp.JRzDHvxduC/status\t2021-11-18 01:01:47.891290415 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdin-hello.wasm",
@@ -41,13 +41,13 @@
         },
         {
             "path": "libc/ftruncate.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __wasilibc_openat_nomode (<anonymous>:wasm-function[29]:0x3635)\n    at open (<anonymous>:wasm-function[30]:0x36f2)\n    at __original_main (<anonymous>:wasm-function[14]:0x376)\n    at _start (<anonymous>:wasm-function[13]:0x29f)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-11-18 01:01:44.370222109 +0000\n+++ /tmp/tmp.vsH0E5WdW9/status\t2021-11-18 01:01:46.762192107 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-11-18 01:01:44.227258952 +0000\n+++ /tmp/tmp.Wdyfg8CRXN/status\t2021-11-18 01:01:48.119292372 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stderr-hello.wasm",
@@ -61,8 +61,8 @@
         },
         {
             "path": "libc/clock_gettime-realtime.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at __clock_gettime (<anonymous>:wasm-function[8]:0x269)\n    at __original_main (<anonymous>:wasm-function[7]:0x1ec)\n    at _start (<anonymous>:wasm-function[6]:0x186)\n    at WASI.start (wasi.js:131:7)\n    at Object.<anonymous> (/home/runner/work/wasi-test-data/wasi-test-data/tools/run-node:60:6)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/assert-true.wasm",
@@ -136,8 +136,8 @@
         },
         {
             "path": "libstd/fs_file_create.wasm",
-            "status": "FAIL",
-            "message": "wasi.js:134\n        throw err;\n        ^\n\nTypeError: wasm function signature contains illegal type\n    at _ZN4wasi13lib_generated9path_open17ha636cc20a6de4d47E (<anonymous>:wasm-function[208]:0x81d6)\n    at _ZN3std3sys4wasi2fs7open_at17hd3fb17952451e8dbE (<anonymous>:wasm-function[149]:0x56bf)\n    at _ZN3std2fs11OpenOptions5_open17hdd0e2801a061a057E (<anonymous>:wasm-function[155]:0x58f2)\n    at _ZN3std2fs11OpenOptions4open17hfd856c337546a866E (<anonymous>:wasm-function[43]:0x1645)\n    at _ZN3std2fs4File6create17h6e7ade26caf1c97cE (<anonymous>:wasm-function[44]:0x1731)\n    at _ZN14fs_file_create4main17hc8a4b7c2e30aa020E (<anonymous>:wasm-function[21]:0x119c)\n    at _ZN4core3ops8function6FnOnce9call_once17hf3bb176b2e78a150E (<anonymous>:wasm-function[50]:0x1b1a)\n    at _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h19533a358d7346e4E (<anonymous>:wasm-function[24]:0x132d)\n    at _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h7bba004f86f62901E (<anonymous>:wasm-function[63]:0x1cd4)\n    at _ZN3std2rt19lang_start_internal17h3a951c04fcb93696E (<anonymous>:wasm-function[198]:0x7e2b)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libstd/env_args-none.wasm",
@@ -221,8 +221,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -236,8 +236,8 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/start.wasm",
@@ -251,8 +251,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-monotonic.wasm",
