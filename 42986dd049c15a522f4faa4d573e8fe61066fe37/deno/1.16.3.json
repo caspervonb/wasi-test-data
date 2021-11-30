@@ -77,7 +77,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-11-29 01:01:41.164788774 +0000\n+++ /tmp/tmp.Abi8yJbnNT/status\t2021-11-29 01:01:45.180879437 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-11-30 01:01:50.329325447 +0000\n+++ /tmp/tmp.GK0KSBEfEQ/status\t2021-11-30 01:01:53.797481316 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/exit-success.wasm",
@@ -92,7 +92,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-11-29 01:01:41.164788774 +0000\n+++ /tmp/tmp.aILT8QF2X8/status\t2021-11-29 01:01:45.372879418 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-11-30 01:01:50.329325447 +0000\n+++ /tmp/tmp.ihYCZIECKp/status\t2021-11-30 01:01:53.965488867 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_gettime-realtime.wasm",
