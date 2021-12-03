@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmtime",
-        "version": "0.31.0"
+        "name": "node",
+        "version": "16.13.0"
     },
     "results": [
         {
@@ -61,8 +61,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- abort.status\t2021-12-03 01:02:05.253495569 +0000\n+++ /tmp/tmp.PY0Yg1TYqv/status\t2021-12-03 01:02:08.157527789 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getentropy.wasm",
@@ -91,8 +91,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2021-12-03 01:02:05.253495569 +0000\n+++ /tmp/tmp.BEZCZ1xEaq/status\t2021-12-03 01:02:08.533531943 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getenv-absent.wasm",
