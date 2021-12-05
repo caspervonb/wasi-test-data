@@ -62,7 +62,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2021-12-04 01:02:05.763728414 +0000\n+++ /tmp/tmp.QvXXe9cLki/status\t2021-12-04 01:02:10.415780936 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2021-12-05 01:07:52.797371488 +0000\n+++ /tmp/tmp.z3rp1wESZk/status\t2021-12-05 01:07:57.597439105 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getentropy.wasm",
@@ -92,7 +92,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2021-12-04 01:02:05.763728414 +0000\n+++ /tmp/tmp.v5WF4oCTWa/status\t2021-12-04 01:02:10.823785543 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2021-12-05 01:07:52.797371488 +0000\n+++ /tmp/tmp.MgwiwnJ9mC/status\t2021-12-05 01:07:58.021445077 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getenv-absent.wasm",
