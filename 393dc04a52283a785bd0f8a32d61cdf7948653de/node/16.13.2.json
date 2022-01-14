@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmtime",
-        "version": "0.33.0"
+        "name": "node",
+        "version": "16.13.2"
     },
     "results": [
         {
@@ -196,13 +196,13 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- abort.status\t2022-01-14 01:09:46.951842911 +0000\n+++ /tmp/tmp.D8mpo7KYX7/status\t2022-01-14 01:09:51.952071484 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2022-01-14 01:09:46.951842911 +0000\n+++ /tmp/tmp.wTcHBrzCQ4/status\t2022-01-14 01:09:52.032075131 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdout-hello.wasm",
