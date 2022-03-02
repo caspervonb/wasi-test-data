@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.14.0"
+        "name": "wasmtime",
+        "version": "0.34.1"
     },
     "results": [
         {
@@ -186,8 +186,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-03-02 00:20:17.314531142 +0000\n+++ /tmp/tmp.Rkk4vbuQJr/status\t2022-03-02 00:20:21.050385709 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/ftruncate.wasm",
@@ -256,8 +256,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-03-02 00:20:17.314531142 +0000\n+++ /tmp/tmp.vWeAJYcOHg/status\t2022-03-02 00:20:21.938431442 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/fopen-working-directory.wasm",
