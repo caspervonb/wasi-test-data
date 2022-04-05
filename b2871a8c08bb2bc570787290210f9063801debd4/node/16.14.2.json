@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "deno",
-        "version": "1.20.4"
+        "name": "node",
+        "version": "16.14.2"
     },
     "results": [
         {
@@ -26,8 +26,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -36,8 +36,8 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/proc_exit-failure.wasm",
@@ -46,8 +46,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libstd/env_args-many.wasm",
@@ -172,7 +172,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-04-05 00:16:42.114246947 +0000\n+++ /tmp/tmp.rVr7JoiKD2/status\t2022-04-05 00:16:48.826250405 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-04-05 00:16:40.560174984 +0000\n+++ /tmp/tmp.baIVi57MK7/status\t2022-04-05 00:16:44.344172715 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdin-hello.wasm",
@@ -232,7 +232,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-04-05 00:16:42.114246947 +0000\n+++ /tmp/tmp.AoQJkcwKv5/status\t2022-04-05 00:16:49.694250945 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-04-05 00:16:40.560174984 +0000\n+++ /tmp/tmp.GKYYbVT9a2/status\t2022-04-05 00:16:45.220172167 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/assert-true.wasm",
