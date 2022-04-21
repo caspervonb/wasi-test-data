@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.14.2"
+        "name": "wasmtime",
+        "version": "0.36.0"
     },
     "results": [
         {
@@ -26,8 +26,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-04-21 00:20:43.416764313 +0000\n+++ /tmp/tmp.XugfFChSqS/status\t2022-04-21 00:20:45.264755101 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/stdin-hello.wasm",
@@ -81,8 +81,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-04-21 00:20:43.416764313 +0000\n+++ /tmp/tmp.t1Zm7OSvEz/status\t2022-04-21 00:20:46.100750932 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/stderr-hello.wasm",
