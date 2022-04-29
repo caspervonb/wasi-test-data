@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmtime",
-        "version": "0.36.0"
+        "name": "deno",
+        "version": "1.21.1"
     },
     "results": [
         {
@@ -126,8 +126,8 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -141,8 +141,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/sched_yield.wasm",
@@ -161,13 +161,13 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "libc/abort.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- abort.status\t2022-04-29 00:18:48.468828369 +0000\n+++ /tmp/tmp.FqLB6RGL71/status\t2022-04-29 00:18:53.892915315 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/exit-success.wasm",
@@ -211,8 +211,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2022-04-29 00:18:48.468828369 +0000\n+++ /tmp/tmp.ZQByrBCnuZ/status\t2022-04-29 00:18:54.420923227 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
