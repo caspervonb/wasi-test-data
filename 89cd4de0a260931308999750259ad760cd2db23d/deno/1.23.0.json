@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.15.1"
+        "name": "deno",
+        "version": "1.23.0"
     },
     "results": [
         {
@@ -121,8 +121,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -146,13 +146,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/proc_exit-failure.wasm",
@@ -212,7 +212,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-06-16 00:19:21.948996151 +0000\n+++ /tmp/tmp.5dLORPpwe0/status\t2022-06-16 00:19:26.092446378 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-06-16 00:19:26.209562024 +0000\n+++ /tmp/tmp.3bqFvSn9q2/status\t2022-06-16 00:19:33.909626507 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stderr-hello.wasm",
@@ -242,7 +242,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-06-16 00:19:21.948996151 +0000\n+++ /tmp/tmp.PW4JwuE4qe/status\t2022-06-16 00:19:26.524460305 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-06-16 00:19:26.209562024 +0000\n+++ /tmp/tmp.STt5UP47Pk/status\t2022-06-16 00:19:34.293628555 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
