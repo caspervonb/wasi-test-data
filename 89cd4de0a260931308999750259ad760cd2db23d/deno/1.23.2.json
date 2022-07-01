@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.15.1"
+        "name": "deno",
+        "version": "1.23.2"
     },
     "results": [
         {
@@ -126,8 +126,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/sched_yield.wasm",
@@ -136,13 +136,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/proc_exit-failure.wasm",
@@ -177,7 +177,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-07-01 00:23:02.866987032 +0000\n+++ /tmp/tmp.LEqTTQjy5x/status\t2022-07-01 00:23:10.011030846 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-07-01 00:22:58.813153255 +0000\n+++ /tmp/tmp.UGXhYYVyDi/status\t2022-07-01 00:23:05.161827256 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-directory-parent-directory.wasm",
@@ -202,7 +202,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-07-01 00:23:02.866987032 +0000\n+++ /tmp/tmp.CfUDKgfX9X/status\t2022-07-01 00:23:10.395033200 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-07-01 00:22:58.813153255 +0000\n+++ /tmp/tmp.Tht6bCHkCs/status\t2022-07-01 00:23:05.457827450 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getenv-present.wasm",
