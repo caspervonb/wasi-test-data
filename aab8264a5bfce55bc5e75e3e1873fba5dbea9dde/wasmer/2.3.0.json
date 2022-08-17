@@ -1,0 +1,268 @@
+{
+    "runtime": {
+        "name": "wasmer",
+        "version": "2.3.0"
+    },
+    "results": [
+        {
+            "path": "libc/fopen-parent-directory.wasm",
+            "status": "FAIL",
+            "message": "Assertion failed: file == NULL (fopen-parent-directory.c: main: 7)\nerror: failed to run `fopen-parent-directory.wasm`\n│   1: RuntimeError: unreachable\n           at abort (fopen-parent-directory.wasm[16]:0x3d6)\n           at __assert_fail (fopen-parent-directory.wasm[17]:0x428)\n           at __original_main (fopen-parent-directory.wasm[12]:0x333)\n           at _start (fopen-parent-directory.wasm[11]:0x27a)\n╰─▶ 2: unreachable\n"
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2022-08-17 00:22:14.457414990 +0000\n+++ /tmp/tmp.GFXtI7YOnS/status\t2022-08-17 00:22:21.045592025 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "FAIL",
+            "message": "--- abort.status\t2022-08-17 00:22:14.457414990 +0000\n+++ /tmp/tmp.WsDousg2OU/status\t2022-08-17 00:22:21.237597834 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/fopen-working-directory.wasm",
+            "status": "FAIL",
+            "message": "Assertion failed: errno == ENOTCAPABLE (fopen-working-directory.c: main: 8)\nerror: failed to run `fopen-working-directory.wasm`\n│   1: RuntimeError: unreachable\n           at abort (fopen-working-directory.wasm[16]:0x3d6)\n           at __assert_fail (fopen-working-directory.wasm[17]:0x428)\n           at __original_main (fopen-working-directory.wasm[12]:0x393)\n           at _start (fopen-working-directory.wasm[11]:0x27a)\n╰─▶ 2: unreachable\n"
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-true.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-directory-parent-directory.wasm",
+            "status": "FAIL",
+            "message": "Assertion failed: errno == ENOTCAPABLE (fopen-directory-parent-directory.c: main: 8)\nerror: failed to run `fopen-directory-parent-directory.wasm`\n│   1: RuntimeError: unreachable\n           at abort (fopen-directory-parent-directory.wasm[16]:0x3d6)\n           at __assert_fail (fopen-directory-parent-directory.wasm[17]:0x428)\n           at __original_main (fopen-directory-parent-directory.wasm[12]:0x393)\n           at _start (fopen-directory-parent-directory.wasm[11]:0x27a)\n╰─▶ 2: unreachable\n"
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-file.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-existing-directory.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'assertion failed: fs::create_dir(\\\"fs_create_dir-existing-directory.dir/existing_directory\\\").is_err()', fs_create_dir-existing-directory.rs:4:3\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nerror: failed to run `fs_create_dir-existing-directory.wasm`\n│   1: RuntimeError: unreachable\n           at __rust_start_panic (fs_create_dir-existing-directory.wasm[182]:0x7896)\n           at rust_panic (fs_create_dir-existing-directory.wasm[176]:0x76c5)\n           at std::panicking::rust_panic_with_hook::h5af4a166307aff48 (fs_create_dir-existing-directory.wasm[175]:0x7642)\n           at std::panicking::begin_panic_handler::{{closure}}::h42a9871ead2de5e8 (fs_create_dir-existing-directory.wasm[163]:0x68ba)\n           at std::sys_common::backtrace::__rust_end_short_backtrace::h42a6bde96d4a4a1f (fs_create_dir-existing-directory.wasm[162]:0x6829)\n           at rust_begin_unwind (fs_create_dir-existing-directory.wasm[170]:0x6f92)\n           at core::panicking::panic_fmt::h33d7d4c3033d60da (fs_create_dir-existing-directory.wasm[260]:0xd658)\n           at core::panicking::panic::hc9bbee34af5ac8e3 (fs_create_dir-existing-directory.wasm[265]:0xdb26)\n           at fs_create_dir_existing_directory::main::h504534dc3a5cd521 (fs_create_dir-existing-directory.wasm[31]:0xb16)\n           at core::ops::function::FnOnce::call_once::h585cb4c5e1d63b87 (fs_create_dir-existing-directory.wasm[53]:0x10b8)\n           at std::sys_common::backtrace::__rust_begin_short_backtrace::hfbd83afcfe12df54 (fs_create_dir-existing-directory.wasm[27]:0x9c2)\n           at std::rt::lang_start::{{closure}}::h1a575d1f98fab5b2 (fs_create_dir-existing-directory.wasm[44]:0xd63)\n           at std::rt::lang_start_internal::hb6c9ed857072d0ac (fs_create_dir-existing-directory.wasm[119]:0x2f10)\n           at std::rt::lang_start::h7493f0f09db6ded6 (fs_create_dir-existing-directory.wasm[43]:0xd29)\n           at __original_main (fs_create_dir-existing-directory.wasm[32]:0xb34)\n           at _start (fs_create_dir-existing-directory.wasm[9]:0x423)\n           at _start.command_export (fs_create_dir-existing-directory.wasm[332]:0x1120c)\n╰─▶ 2: unreachable\n"
+        },
+        {
+            "path": "libstd/io_stdin-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-new-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-directory.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'assertion failed: fs::rename(old_path, new_path).is_ok()', fs_rename-directory.rs:7:3\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nerror: failed to run `fs_rename-directory.wasm`\n│   1: RuntimeError: unreachable\n           at __rust_start_panic (fs_rename-directory.wasm[166]:0x5fd7)\n           at rust_panic (fs_rename-directory.wasm[159]:0x5c00)\n           at std::panicking::rust_panic_with_hook::h5af4a166307aff48 (fs_rename-directory.wasm[158]:0x5b7d)\n           at std::panicking::begin_panic_handler::{{closure}}::h42a9871ead2de5e8 (fs_rename-directory.wasm[146]:0x4df5)\n           at std::sys_common::backtrace::__rust_end_short_backtrace::h42a6bde96d4a4a1f (fs_rename-directory.wasm[145]:0x4d64)\n           at rust_begin_unwind (fs_rename-directory.wasm[153]:0x54cd)\n           at core::panicking::panic_fmt::h33d7d4c3033d60da (fs_rename-directory.wasm[243]:0xbccb)\n           at core::panicking::panic::hc9bbee34af5ac8e3 (fs_rename-directory.wasm[248]:0xc199)\n           at fs_rename_directory::main::h9cc307ae46113585 (fs_rename-directory.wasm[25]:0x99a)\n           at core::ops::function::FnOnce::call_once::h07aa605bb3fda4f3 (fs_rename-directory.wasm[45]:0xde4)\n           at std::sys_common::backtrace::__rust_begin_short_backtrace::hd0cd904e85ebadd0 (fs_rename-directory.wasm[24]:0x8ae)\n           at std::rt::lang_start::{{closure}}::hc905165399da9cc7 (fs_rename-directory.wasm[42]:0xcff)\n           at std::rt::lang_start_internal::hb6c9ed857072d0ac (fs_rename-directory.wasm[113]:0x2d5b)\n           at std::rt::lang_start::h8e84bb88387f62b2 (fs_rename-directory.wasm[41]:0xcc5)\n           at __original_main (fs_rename-directory.wasm[26]:0x9b8)\n           at _start (fs_rename-directory.wasm[8]:0x3d8)\n           at _start.command_export (fs_rename-directory.wasm[315]:0xf87f)\n╰─▶ 2: unreachable\n"
+        },
+        {
+            "path": "libstd/env_args-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-file.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at 'assertion failed: fs::rename(old_path, new_path).is_ok()', fs_rename-file.rs:7:3\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nerror: failed to run `fs_rename-file.wasm`\n│   1: RuntimeError: unreachable\n           at __rust_start_panic (fs_rename-file.wasm[166]:0x5fd7)\n           at rust_panic (fs_rename-file.wasm[159]:0x5c00)\n           at std::panicking::rust_panic_with_hook::h5af4a166307aff48 (fs_rename-file.wasm[158]:0x5b7d)\n           at std::panicking::begin_panic_handler::{{closure}}::h42a9871ead2de5e8 (fs_rename-file.wasm[146]:0x4df5)\n           at std::sys_common::backtrace::__rust_end_short_backtrace::h42a6bde96d4a4a1f (fs_rename-file.wasm[145]:0x4d64)\n           at rust_begin_unwind (fs_rename-file.wasm[153]:0x54cd)\n           at core::panicking::panic_fmt::h33d7d4c3033d60da (fs_rename-file.wasm[243]:0xbccb)\n           at core::panicking::panic::hc9bbee34af5ac8e3 (fs_rename-file.wasm[248]:0xc199)\n           at fs_rename_file::main::he9e91ec1d21c5afc (fs_rename-file.wasm[25]:0x99a)\n           at core::ops::function::FnOnce::call_once::hb5943d96835a9bb2 (fs_rename-file.wasm[45]:0xde4)\n           at std::sys_common::backtrace::__rust_begin_short_backtrace::hc6e1b6cd5b7265c4 (fs_rename-file.wasm[24]:0x8ae)\n           at std::rt::lang_start::{{closure}}::hda9d58b541ed2c3f (fs_rename-file.wasm[42]:0xcff)\n           at std::rt::lang_start_internal::hb6c9ed857072d0ac (fs_rename-file.wasm[113]:0x2d5b)\n           at std::rt::lang_start::hacf294e8cfa84cb6 (fs_rename-file.wasm[41]:0xcc5)\n           at __original_main (fs_rename-file.wasm[26]:0x9b8)\n           at _start (fs_rename-file.wasm[8]:0x3d8)\n           at _start.command_export (fs_rename-file.wasm[315]:0xf87f)\n╰─▶ 2: unreachable\n"
+        },
+        {
+            "path": "libstd/io_stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_file_create.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        }
+    ]
+}
