@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "deno",
-        "version": "1.24.3"
+        "name": "wasmtime-cli",
+        "version": "0.40.0"
     },
     "results": [
         {
@@ -11,8 +11,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-08-23 00:27:14.142181224 +0000\n+++ /tmp/tmp.DjARsQ0jLT/status\t2022-08-23 00:27:21.258236851 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
@@ -36,8 +36,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-08-23 00:27:14.142181224 +0000\n+++ /tmp/tmp.b9bEcluXxR/status\t2022-08-23 00:27:21.554236968 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/fopen-working-directory.wasm",
@@ -106,8 +106,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/sched_yield.wasm",
@@ -126,13 +126,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
