@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.17.0"
+        "name": "deno",
+        "version": "1.25.3"
     },
     "results": [
         {
@@ -12,7 +12,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-09-16 00:25:54.693529808 +0000\n+++ /tmp/tmp.1Z7e5XDdER/status\t2022-09-16 00:25:56.305649402 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-09-16 00:25:57.213093396 +0000\n+++ /tmp/tmp.ctbyJthjXd/status\t2022-09-16 00:26:01.520680046 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
@@ -37,7 +37,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-09-16 00:25:54.693529808 +0000\n+++ /tmp/tmp.qlY2d8L1So/status\t2022-09-16 00:25:56.685677594 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-09-16 00:25:57.213093396 +0000\n+++ /tmp/tmp.V46gdiPGN6/status\t2022-09-16 00:26:01.840692989 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-working-directory.wasm",
@@ -106,8 +106,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/sched_yield.wasm",
@@ -126,13 +126,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
