@@ -187,7 +187,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-10-02 00:31:31.813506847 +0000\n+++ /tmp/tmp.1i6APAFwZm/status\t2022-10-02 00:31:36.117173955 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-10-03 00:27:10.626728814 +0000\n+++ /tmp/tmp.WtxEmeletL/status\t2022-10-03 00:27:16.446778051 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getentropy.wasm",
@@ -217,7 +217,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-10-02 00:31:31.813506847 +0000\n+++ /tmp/tmp.KhCaDHJCQ4/status\t2022-10-02 00:31:36.497176511 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-10-03 00:27:10.626728814 +0000\n+++ /tmp/tmp.1YeD1bKxK2/status\t2022-10-03 00:27:16.886781488 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "core/proc_exit-failure.wasm",
