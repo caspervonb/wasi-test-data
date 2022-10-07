@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.17.1"
+        "name": "deno",
+        "version": "1.26.1"
     },
     "results": [
         {
@@ -187,7 +187,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-10-07 00:33:41.416188932 +0000\n+++ /tmp/tmp.cWT4WGh9Z8/status\t2022-10-07 00:33:45.528216892 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-10-07 00:33:48.978311416 +0000\n+++ /tmp/tmp.DbM8G9VpZZ/status\t2022-10-07 00:33:54.310256986 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getentropy.wasm",
@@ -217,7 +217,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-10-07 00:33:41.416188932 +0000\n+++ /tmp/tmp.6PaIvzZ9rW/status\t2022-10-07 00:33:45.892219166 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-10-07 00:33:48.978311416 +0000\n+++ /tmp/tmp.QGjuo5Pjfq/status\t2022-10-07 00:33:54.546254577 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "core/proc_exit-failure.wasm",
@@ -231,8 +231,8 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/proc_exit-success.wasm",
@@ -246,8 +246,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/start.wasm",
@@ -261,8 +261,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         }
     ]
 }
