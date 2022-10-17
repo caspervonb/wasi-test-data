@@ -5,207 +5,17 @@
     },
     "results": [
         {
-            "path": "libc/fopen-directory-parent-directory.wasm",
+            "path": "libstd/env_vars-none.wasm",
             "status": "PASS",
             "message": ""
         },
         {
-            "path": "libc/stdin-hello.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/clock_getres-monotonic.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/clock_gettime-realtime.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/fopen-working-directory.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-10-16 00:32:04.888084099 +0000\n+++ /tmp/tmp.BIAq9CHDLN/status\t2022-10-16 00:32:08.276124580 +0000\n@@ -1 +1 @@\n-134\n+1\n"
-        },
-        {
-            "path": "libc/getenv-absent.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/exit-success.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/main.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/getentropy.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/exit-failure.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/stdout-hello.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/getenv-present.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/stderr-hello.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-10-16 00:32:04.888084099 +0000\n+++ /tmp/tmp.tDNERmbLQJ/status\t2022-10-16 00:32:08.832133581 +0000\n@@ -1 +1 @@\n-134\n+1\n"
-        },
-        {
-            "path": "libc/clock_getres-realtime.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/clock_gettime-monotonic.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/assert-true.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/ftruncate.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libc/fopen-parent-directory.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "core/fd_stat_get-stdin.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
-        },
-        {
-            "path": "core/proc_exit-failure.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "core/fd_stat_get-stderr.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
-        },
-        {
-            "path": "core/start.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "core/clock_get_res-monotonic.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "core/fd_stat_get-stdout.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
-        },
-        {
-            "path": "core/clock_get_res-realtime.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "core/sched_yield.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "core/proc_exit-success.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/env_args-none.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/fs_rename-directory.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/env_args-some.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/env_args-many.wasm",
+            "path": "libstd/env_vars-many.wasm",
             "status": "PASS",
             "message": ""
         },
         {
             "path": "libstd/fs_metadata-directory.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/fs_rename-file.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/process_exit-1.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/process_exit-120.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/fs_metadata-file.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/fs_create_dir-existing-directory.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/main.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/fs_create_dir-new-directory.wasm",
             "status": "PASS",
             "message": ""
         },
@@ -220,17 +30,7 @@
             "message": ""
         },
         {
-            "path": "libstd/io_stdout-hello.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/env_vars-none.wasm",
-            "status": "PASS",
-            "message": ""
-        },
-        {
-            "path": "libstd/process_exit-0.wasm",
+            "path": "libstd/io_stdin-hello.wasm",
             "status": "PASS",
             "message": ""
         },
@@ -240,7 +40,77 @@
             "message": ""
         },
         {
+            "path": "libstd/io_stdin-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-existing-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-some.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-file.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-new-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-many.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
             "path": "libstd/fs_file_create.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-file.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
             "status": "PASS",
             "message": ""
         },
@@ -250,19 +120,149 @@
             "message": ""
         },
         {
-            "path": "libstd/io_stdin-beowulf.wasm",
+            "path": "libc/assert-true.wasm",
             "status": "PASS",
             "message": ""
         },
         {
-            "path": "libstd/io_stdin-hello.wasm",
+            "path": "libc/exit-success.wasm",
             "status": "PASS",
             "message": ""
         },
         {
-            "path": "libstd/env_vars-many.wasm",
+            "path": "libc/fopen-directory-parent-directory.wasm",
             "status": "PASS",
             "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-working-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "FAIL",
+            "message": "--- abort.status\t2022-10-17 00:32:15.170546900 +0000\n+++ /tmp/tmp.IliCV6wnpQ/status\t2022-10-17 00:32:21.735117212 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2022-10-17 00:32:15.170546900 +0000\n+++ /tmp/tmp.K4rkH0hFPx/status\t2022-10-17 00:32:22.059119166 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+        },
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         }
     ]
 }

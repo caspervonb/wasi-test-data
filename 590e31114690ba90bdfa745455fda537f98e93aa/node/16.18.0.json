@@ -32,7 +32,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-10-15 00:29:21.566164146 +0000\n+++ /tmp/tmp.ihoQHyz5v6/status\t2022-10-15 00:29:24.350170313 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-10-17 00:32:14.802354285 +0000\n+++ /tmp/tmp.o6NDm0m2Gz/status\t2022-10-17 00:32:16.486367717 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getenv-absent.wasm",
@@ -77,7 +77,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-10-15 00:29:21.566164146 +0000\n+++ /tmp/tmp.socz7zonUj/status\t2022-10-15 00:29:25.030171819 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-10-17 00:32:14.802354285 +0000\n+++ /tmp/tmp.qP7De7ZgJI/status\t2022-10-17 00:32:17.158373076 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
