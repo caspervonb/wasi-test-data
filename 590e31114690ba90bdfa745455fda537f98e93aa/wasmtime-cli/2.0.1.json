@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.18.0"
+        "name": "wasmtime-cli",
+        "version": "2.0.1"
     },
     "results": [
         {
@@ -176,8 +176,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-10-28 00:26:11.608730507 +0000\n+++ /tmp/tmp.T2MA46CdLf/status\t2022-10-28 00:26:16.097069370 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/exit-success.wasm",
@@ -256,8 +256,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-10-28 00:26:11.608730507 +0000\n+++ /tmp/tmp.p1Q4KLTrHT/status\t2022-10-28 00:26:17.417170162 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/stdin-hello.wasm",
