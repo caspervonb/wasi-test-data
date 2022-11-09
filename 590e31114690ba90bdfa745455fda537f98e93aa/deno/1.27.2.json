@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.18.0"
+        "name": "deno",
+        "version": "1.27.2"
     },
     "results": [
         {
@@ -16,8 +16,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -26,13 +26,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-monotonic.wasm",
@@ -177,7 +177,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-11-09 00:23:36.643736609 +0000\n+++ /tmp/tmp.xNk4jn6C8f/status\t2022-11-09 00:23:42.939763745 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-11-09 00:23:33.178886668 +0000\n+++ /tmp/tmp.kDzNnJBiLO/status\t2022-11-09 00:23:37.878960741 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/exit-success.wasm",
@@ -257,7 +257,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-11-09 00:23:36.643736609 +0000\n+++ /tmp/tmp.7izpKNXhuB/status\t2022-11-09 00:23:43.995768350 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-11-09 00:23:33.178886668 +0000\n+++ /tmp/tmp.lqGqEpsEN5/status\t2022-11-09 00:23:38.586972104 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdin-hello.wasm",
