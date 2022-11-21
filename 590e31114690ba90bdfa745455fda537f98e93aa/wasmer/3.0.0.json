@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.18.0"
+        "name": "wasmer",
+        "version": "3.0.0"
     },
     "results": [
         {
@@ -176,8 +176,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-11-21 00:22:41.031784740 +0000\n+++ /tmp/tmp.Yhrcvxy8FU/status\t2022-11-21 00:22:47.812095602 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/exit-success.wasm",
@@ -256,8 +256,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-11-21 00:22:41.031784740 +0000\n+++ /tmp/tmp.hEkHJho2OX/status\t2022-11-21 00:22:49.020129472 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/stdin-hello.wasm",
