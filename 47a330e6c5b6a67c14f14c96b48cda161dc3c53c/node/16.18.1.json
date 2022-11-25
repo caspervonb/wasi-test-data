@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmtime-cli",
-        "version": "3.0.0"
+        "name": "node",
+        "version": "16.18.1"
     },
     "results": [
         {
@@ -176,13 +176,13 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- abort.status\t2022-11-25 00:20:12.317854382 +0000\n+++ /tmp/tmp.FNyDF75lhK/status\t2022-11-25 00:20:18.590320159 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- assert-false.status\t2022-11-25 00:20:12.317854382 +0000\n+++ /tmp/tmp.KrFt0BFmeu/status\t2022-11-25 00:20:18.670320931 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-monotonic.wasm",
