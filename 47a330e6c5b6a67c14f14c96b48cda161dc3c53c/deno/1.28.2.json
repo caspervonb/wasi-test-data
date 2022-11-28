@@ -177,12 +177,12 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-11-27 00:22:28.804359052 +0000\n+++ /tmp/tmp.1epcbOcHqi/status\t2022-11-27 00:22:34.424416174 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-11-28 00:19:21.014185441 +0000\n+++ /tmp/tmp.SiOen7lzUm/status\t2022-11-28 00:19:25.902233483 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-11-27 00:22:28.804359052 +0000\n+++ /tmp/tmp.fdYHVJXqSD/status\t2022-11-27 00:22:34.472416662 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-11-28 00:19:21.014185441 +0000\n+++ /tmp/tmp.RqsDgP2s90/status\t2022-11-28 00:19:25.946233916 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-monotonic.wasm",
