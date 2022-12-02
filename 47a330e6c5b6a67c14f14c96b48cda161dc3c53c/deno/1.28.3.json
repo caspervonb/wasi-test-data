@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.18.1"
+        "name": "deno",
+        "version": "1.28.3"
     },
     "results": [
         {
@@ -21,8 +21,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/sched_yield.wasm",
@@ -41,13 +41,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "libstd/fs_metadata-directory.wasm",
@@ -177,12 +177,12 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2022-12-02 00:20:19.344593473 +0000\n+++ /tmp/tmp.dwCnkVbO37/status\t2022-12-02 00:20:23.252786771 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2022-12-02 00:20:20.516368988 +0000\n+++ /tmp/tmp.9tvTnbcxXB/status\t2022-12-02 00:20:26.340549588 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2022-12-02 00:20:19.344593473 +0000\n+++ /tmp/tmp.TE7DIMkEw3/status\t2022-12-02 00:20:23.320790134 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2022-12-02 00:20:20.516368988 +0000\n+++ /tmp/tmp.Cq8O1iccqd/status\t2022-12-02 00:20:26.388551067 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-monotonic.wasm",
