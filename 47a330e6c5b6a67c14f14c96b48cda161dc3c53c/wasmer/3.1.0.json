@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "deno",
-        "version": "1.28.3"
+        "name": "wasmer",
+        "version": "3.1.0"
     },
     "results": [
         {
@@ -21,8 +21,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/sched_yield.wasm",
@@ -41,13 +41,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libstd/fs_metadata-directory.wasm",
@@ -176,13 +176,13 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2022-12-13 00:21:11.104583147 +0000\n+++ /tmp/tmp.jXIGgdMuq3/status\t2022-12-13 00:21:18.156594303 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2022-12-13 00:21:11.104583147 +0000\n+++ /tmp/tmp.ESRLPQpeZm/status\t2022-12-13 00:21:18.212594467 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/clock_getres-monotonic.wasm",
