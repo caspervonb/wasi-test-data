@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "16.19.0"
+        "name": "wasmtime-cli",
+        "version": "5.0.0"
     },
     "results": [
         {
@@ -181,8 +181,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2023-01-21 00:20:09.143894787 +0000\n+++ /tmp/tmp.IvphNsszeK/status\t2023-01-21 00:20:14.943878849 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/exit-failure.wasm",
@@ -216,8 +216,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2023-01-21 00:20:09.143894787 +0000\n+++ /tmp/tmp.L5Bun10f27/status\t2023-01-21 00:20:15.383877640 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/getentropy.wasm",
