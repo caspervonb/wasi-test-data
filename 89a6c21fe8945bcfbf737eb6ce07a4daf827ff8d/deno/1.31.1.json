@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "18.14.1"
+        "name": "deno",
+        "version": "1.31.1"
     },
     "results": [
         {
@@ -192,7 +192,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-02-26 00:23:28.340116982 +0000\n+++ /tmp/tmp.MXjkZJXmSh/status\t2023-02-26 00:23:32.596154271 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-02-26 00:23:26.647079087 +0000\n+++ /tmp/tmp.bj9JUssLUB/status\t2023-02-26 00:23:32.375191630 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-working-directory.wasm",
@@ -207,7 +207,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-02-26 00:23:28.340116982 +0000\n+++ /tmp/tmp.Gm6xIAwenv/status\t2023-02-26 00:23:32.784155920 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-02-26 00:23:26.647079087 +0000\n+++ /tmp/tmp.uOsVUA8ZrP/status\t2023-02-26 00:23:32.535194504 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-realtime.wasm",
@@ -236,8 +236,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/clock_get_res-monotonic.wasm",
@@ -256,13 +256,13 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         }
     ]
 }
