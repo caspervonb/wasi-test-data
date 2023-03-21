@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "18.15.0"
+        "name": "wasmtime-cli",
+        "version": "7.0.0"
     },
     "results": [
         {
@@ -81,8 +81,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2023-03-21 00:19:28.523255044 +0000\n+++ /tmp/tmp.eEsFBnOHxH/status\t2023-03-21 00:19:30.703256155 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/getenv-present.wasm",
@@ -96,8 +96,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2023-03-21 00:19:28.523255044 +0000\n+++ /tmp/tmp.l3Xpsv590z/status\t2023-03-21 00:19:30.851256231 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/getenv-absent.wasm",
