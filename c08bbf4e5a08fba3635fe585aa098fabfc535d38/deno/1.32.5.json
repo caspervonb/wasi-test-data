@@ -192,7 +192,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-04-19 00:19:59.255354325 +0000\n+++ /tmp/tmp.DbNibbIaTu/status\t2023-04-19 00:20:05.923542090 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-04-20 00:18:14.495080309 +0000\n+++ /tmp/tmp.c4LtFn97fy/status\t2023-04-20 00:18:19.979022085 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getenv-absent.wasm",
@@ -232,7 +232,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-04-19 00:19:59.255354325 +0000\n+++ /tmp/tmp.ZEsIwFnXK2/status\t2023-04-19 00:20:06.331553579 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-04-20 00:18:14.495080309 +0000\n+++ /tmp/tmp.QnIfPLhMDN/status\t2023-04-20 00:18:20.315018528 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdin-hello.wasm",
