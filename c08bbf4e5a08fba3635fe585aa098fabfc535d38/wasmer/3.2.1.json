@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "18.16.0"
+        "name": "wasmer",
+        "version": "3.2.1"
     },
     "results": [
         {
@@ -191,8 +191,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2023-04-23 00:20:37.285840777 +0000\n+++ /tmp/tmp.UhlDGBfUO4/status\t2023-04-23 00:20:43.146129515 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/getenv-absent.wasm",
@@ -231,8 +231,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2023-04-23 00:20:37.285840777 +0000\n+++ /tmp/tmp.rC4eyK9Hlb/status\t2023-04-23 00:20:43.606152148 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/stdin-hello.wasm",
