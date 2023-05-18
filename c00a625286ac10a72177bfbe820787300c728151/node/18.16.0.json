@@ -212,7 +212,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-05-17 00:20:34.976537092 +0000\n+++ /tmp/tmp.dtJdh0oMkT/status\t2023-05-17 00:20:39.864560140 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-05-18 00:18:29.114455998 +0000\n+++ /tmp/tmp.zOEt9Ez29Q/status\t2023-05-18 00:18:34.330452203 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_getres-monotonic.wasm",
@@ -237,7 +237,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-05-17 00:20:34.976537092 +0000\n+++ /tmp/tmp.KSi9zgNNK8/status\t2023-05-17 00:20:40.232561946 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-05-18 00:18:29.114455998 +0000\n+++ /tmp/tmp.DLnXYTKa1h/status\t2023-05-18 00:18:34.586452016 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/stdin-hello.wasm",
