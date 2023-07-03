@@ -242,7 +242,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-07-02 00:25:01.394712217 +0000\n+++ /tmp/tmp.muVQw672Bs/status\t2023-07-02 00:25:09.911145643 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-07-03 00:23:42.481798706 +0000\n+++ /tmp/tmp.tzTLubORLP/status\t2023-07-03 00:23:50.498064240 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getenv-absent.wasm",
@@ -257,7 +257,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-07-02 00:25:01.394712217 +0000\n+++ /tmp/tmp.KgI4qIHzlV/status\t2023-07-02 00:25:10.067153998 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-07-03 00:23:42.481798706 +0000\n+++ /tmp/tmp.qylYrE2XVj/status\t2023-07-03 00:23:50.638076291 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-parent-directory.wasm",
