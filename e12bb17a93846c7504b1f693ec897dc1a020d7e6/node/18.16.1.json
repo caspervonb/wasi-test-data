@@ -12,7 +12,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-07-10 00:24:07.242226583 +0000\n+++ /tmp/tmp.sz6PprIQuc/status\t2023-07-10 00:24:08.642243135 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-07-11 00:21:45.571532161 +0000\n+++ /tmp/tmp.N6OJIOG07T/status\t2023-07-11 00:21:46.815549618 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/exit-success.wasm",
@@ -42,7 +42,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-07-10 00:24:07.242226583 +0000\n+++ /tmp/tmp.dsHZFNdNor/status\t2023-07-10 00:24:09.038247820 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-07-11 00:21:45.571532161 +0000\n+++ /tmp/tmp.Cy4qC1mxQG/status\t2023-07-11 00:21:47.123553940 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/main.wasm",
