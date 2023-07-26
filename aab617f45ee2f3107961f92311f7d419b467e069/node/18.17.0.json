@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "deno",
-        "version": "1.35.2"
+        "name": "node",
+        "version": "18.17.0"
     },
     "results": [
         {
@@ -12,7 +12,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-07-26 00:22:07.948248454 +0000\n+++ /tmp/tmp.8grh8RxANT/status\t2023-07-26 00:22:12.664416434 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-07-26 00:22:10.462662580 +0000\n+++ /tmp/tmp.TS4nMiwU9f/status\t2023-07-26 00:22:15.386688816 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/exit-success.wasm",
@@ -42,7 +42,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-07-26 00:22:07.948248454 +0000\n+++ /tmp/tmp.dBjxMXcb4h/status\t2023-07-26 00:22:12.948466597 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-07-26 00:22:10.462662580 +0000\n+++ /tmp/tmp.3x5YhW4iHC/status\t2023-07-26 00:22:15.822691406 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/main.wasm",
@@ -231,8 +231,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/clock_get_res-monotonic.wasm",
@@ -246,13 +246,13 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "FAIL",
-            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "core/start.wasm",
