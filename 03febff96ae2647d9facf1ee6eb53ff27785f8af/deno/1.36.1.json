@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmer",
-        "version": "4.1.1"
+        "name": "deno",
+        "version": "1.36.1"
     },
     "results": [
         {
@@ -17,7 +17,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-08-11 00:16:40.634703267 +0000\n+++ /tmp/tmp.kcHi8Zj9BL/status\t2023-08-11 00:16:46.662756066 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-08-11 00:16:40.767433205 +0000\n+++ /tmp/tmp.xuAIrzZaRZ/status\t2023-08-11 00:16:44.659486531 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-directory-parent-directory.wasm",
@@ -82,7 +82,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-08-11 00:16:40.634703267 +0000\n+++ /tmp/tmp.RkdtF1Dy9W/status\t2023-08-11 00:16:47.650760522 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-08-11 00:16:40.767433205 +0000\n+++ /tmp/tmp.zKFBdlBMhi/status\t2023-08-11 00:16:45.327495684 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-parent-directory.wasm",
@@ -221,8 +221,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/start.wasm",
@@ -256,13 +256,13 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         }
     ]
 }
