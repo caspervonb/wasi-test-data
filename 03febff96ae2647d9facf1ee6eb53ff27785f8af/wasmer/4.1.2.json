@@ -117,7 +117,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-09-04 00:18:03.914792445 +0000\n+++ /tmp/tmp.Ni7Oa2bEpM/status\t2023-09-04 00:18:14.590928174 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-09-05 00:17:12.826286717 +0000\n+++ /tmp/tmp.cZx6BeR6DA/status\t2023-09-05 00:17:20.906472875 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/getentropy.wasm",
@@ -137,7 +137,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-09-04 00:18:03.914792445 +0000\n+++ /tmp/tmp.SlQdFWC0cl/status\t2023-09-04 00:18:15.074934189 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-09-05 00:17:12.826286717 +0000\n+++ /tmp/tmp.c2Cg6DnXBA/status\t2023-09-05 00:17:21.310482168 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_gettime-realtime.wasm",
