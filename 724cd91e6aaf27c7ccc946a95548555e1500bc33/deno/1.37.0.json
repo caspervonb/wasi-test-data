@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "18.17.1"
+        "name": "deno",
+        "version": "1.37.0"
     },
     "results": [
         {
@@ -136,18 +136,18 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(19:1)\n"
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(21:1)\n"
         },
         {
             "path": "core/proc_exit-failure.wasm",
@@ -222,7 +222,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-09-20 00:17:45.440530281 +0000\n+++ /tmp/tmp.3jTgTwMiAB/status\t2023-09-20 00:17:50.344554922 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-09-20 00:17:43.193876558 +0000\n+++ /tmp/tmp.8rJBqIlw9f/status\t2023-09-20 00:17:51.081835302 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/clock_gettime-realtime.wasm",
@@ -242,7 +242,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-09-20 00:17:45.440530281 +0000\n+++ /tmp/tmp.8Vl143k4cI/status\t2023-09-20 00:17:50.616556887 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-09-20 00:17:43.193876558 +0000\n+++ /tmp/tmp.nzYVSC7JNY/status\t2023-09-20 00:17:51.269837460 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/assert-true.wasm",
