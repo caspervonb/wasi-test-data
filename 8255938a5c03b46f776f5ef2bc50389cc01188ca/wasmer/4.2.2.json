@@ -1,13 +1,13 @@
 {
     "runtime": {
-        "name": "node",
-        "version": "18.18.0"
+        "name": "wasmer",
+        "version": "4.2.2"
     },
     "results": [
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-10-05 00:18:01.800661871 +0000\n+++ /tmp/tmp.qMosXDwLE0/status\t2023-10-05 00:18:03.128692583 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-10-05 00:18:03.981971676 +0000\n+++ /tmp/tmp.ahAyYnJFDv/status\t2023-10-05 00:18:12.546027512 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/fopen-directory-parent-directory.wasm",
@@ -22,7 +22,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-10-05 00:18:01.800661871 +0000\n+++ /tmp/tmp.vV5kuAlMH2/status\t2023-10-05 00:18:03.368716345 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-10-05 00:18:03.981971676 +0000\n+++ /tmp/tmp.LIUNTQ0BCO/status\t2023-10-05 00:18:12.814029218 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/main.wasm",
