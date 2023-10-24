@@ -1,0 +1,268 @@
+{
+    "runtime": {
+        "name": "wasmtime-cli",
+        "version": "14.0.1"
+    },
+    "results": [
+        {
+            "path": "libstd/env_vars-some.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at env_vars-some.rs:5:3:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `env_vars-some.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x90cb - <unknown>!__rust_start_panic\n           1: 0x8f1b - <unknown>!rust_panic\n           2: 0x8ef8 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x8262 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x818f - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x8813 - <unknown>!rust_begin_unwind\n           6: 0xd7ca - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xf882 - <unknown>!core::panicking::assert_failed_inner::h1349768c866a993e\n           8: 0x2849 - <unknown>!core::panicking::assert_failed::h7d61b556d73b8f51\n           9: 0x4795 - <unknown>!env_vars_some::main::hbf67ef30573749d8\n          10:  0xd67 - <unknown>!core::ops::function::FnOnce::call_once::h653e5b1bc68e0371\n          11:  0xd3e - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h197bb8b506917c5e\n          12:  0xe1f - <unknown>!std::rt::lang_start::{{closure}}::h34a995ca4d9fef10\n          13: 0x6101 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xdca - <unknown>!std::rt::lang_start::h82741734ac1d6650\n          15: 0x4848 - <unknown>!__main_void\n          16:  0x36a - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/fs_rename-directory.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at fs_rename-directory.rs:7:3:\nassertion failed: fs::rename(old_path, new_path).is_ok()\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_rename-directory.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x530c - <unknown>!__rust_start_panic\n           1: 0x4e64 - <unknown>!rust_panic\n           2: 0x4e41 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x41b5 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x411a - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x475c - <unknown>!rust_begin_unwind\n           6: 0xa526 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xaab1 - <unknown>!core::panicking::panic::h2d50353119445d1c\n           8:  0xafb - <unknown>!fs_rename_directory::main::h568374602871657b\n           9:  0x3d6 - <unknown>!core::ops::function::FnOnce::call_once::hde9755807a258963\n          10:  0x3ad - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h9463278a619ca37e\n          11:  0x5b5 - <unknown>!std::rt::lang_start::{{closure}}::hbe9630890f685263\n          12: 0x2318 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          13:  0x560 - <unknown>!std::rt::lang_start::h4997ff3d9e07fae1\n          14:  0xb1f - <unknown>!__main_void\n          15:  0x388 - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/process_exit-0.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-new-directory.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at fs_create_dir-new-directory.rs:4:3:\nassertion failed: fs::create_dir(\\\"fs_create_dir-new-directory.dir/new_directory\\\").is_ok()\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_create_dir-new-directory.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x6a81 - <unknown>!__rust_start_panic\n           1: 0x68d1 - <unknown>!rust_panic\n           2: 0x68ae - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x5c22 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x5b87 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x61c9 - <unknown>!rust_begin_unwind\n           6: 0xbd66 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xc2f1 - <unknown>!core::panicking::panic::h2d50353119445d1c\n           8:  0xc2a - <unknown>!fs_create_dir_new_directory::main::hae87a0c64af77e3e\n           9:  0x420 - <unknown>!core::ops::function::FnOnce::call_once::hb511b00904a64c85\n          10:  0x3f7 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h58b3a4623dd72545\n          11:  0x6dd - <unknown>!std::rt::lang_start::{{closure}}::h58206eba985c12a3\n          12: 0x249d - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          13:  0x688 - <unknown>!std::rt::lang_start::h0d75be535249137b\n          14:  0xc4e - <unknown>!__main_void\n          15:  0x3d2 - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/env_args-none.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at env_args-none.rs:5:3:\nassertion `left == right` failed\n  left: 2\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `env_args-none.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x87cb - <unknown>!__rust_start_panic\n           1: 0x861b - <unknown>!rust_panic\n           2: 0x85f8 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x7962 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x788f - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x7f13 - <unknown>!rust_begin_unwind\n           6: 0xcf40 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xeff8 - <unknown>!core::panicking::assert_failed_inner::h1349768c866a993e\n           8: 0x216b - <unknown>!core::panicking::assert_failed::h704d9a982ac7e37e\n           9: 0x3f85 - <unknown>!env_args_none::main::h2c710f2c7eebff04\n          10:  0xd2d - <unknown>!core::ops::function::FnOnce::call_once::hf2b37b5d350ce956\n          11:  0xd04 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::hb8ef2330c1f9b59f\n          12:  0xde5 - <unknown>!std::rt::lang_start::{{closure}}::h1b5328c2a2b4bd8d\n          13: 0x58d7 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xd90 - <unknown>!std::rt::lang_start::h52510e3c0a266d7d\n          15: 0x401d - <unknown>!__main_void\n          16:  0x3aa - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/fs_file_create.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at fs_file_create.rs:4:3:\nassertion failed: fs::File::create(\\\"fs_file_create.dir/new_file\\\").is_ok()\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_file_create.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x66f8 - <unknown>!__rust_start_panic\n           1: 0x63a2 - <unknown>!rust_panic\n           2: 0x637f - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x56f3 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x5658 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x5c9a - <unknown>!rust_begin_unwind\n           6: 0xbb2e - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xc0b9 - <unknown>!core::panicking::panic::h2d50353119445d1c\n           8: 0x1764 - <unknown>!fs_file_create::main::h4219bed4c6d2f8a1\n           9:  0x49e - <unknown>!core::ops::function::FnOnce::call_once::hb496f1e794f7e04a\n          10:  0x475 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h9608fdeeece1cf3c\n          11:  0xe5a - <unknown>!std::rt::lang_start::{{closure}}::h01de7a19b8a25161\n          12: 0x32ae - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          13:  0xe05 - <unknown>!std::rt::lang_start::ha8c8abbce1612813\n          14: 0x17c1 - <unknown>!__main_void\n          15:  0x450 - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/process_exit-120.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_create_dir-existing-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_args-many.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at env_args-many.rs:5:3:\nassertion `left == right` failed\n  left: 5\n right: 4\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `env_args-many.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x8a1d - <unknown>!__rust_start_panic\n           1: 0x886d - <unknown>!rust_panic\n           2: 0x884a - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x7bb4 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x7ae1 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x8165 - <unknown>!rust_begin_unwind\n           6: 0xd192 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xf24a - <unknown>!core::panicking::assert_failed_inner::h1349768c866a993e\n           8: 0x21dc - <unknown>!core::panicking::assert_failed::hb67b2969bb993f64\n           9: 0x3f91 - <unknown>!env_args_many::main::h5e393ec1c5a2f7f1\n          10:  0xd2d - <unknown>!core::ops::function::FnOnce::call_once::he4fb4f8e9fb13988\n          11:  0xd04 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h38d57304a1f5ed67\n          12:  0xde5 - <unknown>!std::rt::lang_start::{{closure}}::h13a3c9a3f82c8e48\n          13: 0x5b29 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xd90 - <unknown>!std::rt::lang_start::hd484e0db42acd1fd\n          15: 0x426f - <unknown>!__main_void\n          16:  0x3aa - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/io_stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-file.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at fs_metadata-file.rs:4:60:\ncalled `Result::unwrap()` on an `Err` value: Custom { kind: Uncategorized, error: \"failed to find a pre-opened file descriptor through which \\\"fs_metadata-file.dir/file\\\" could be opened\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_metadata-file.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x5f1e - <unknown>!__rust_start_panic\n           1: 0x5d43 - <unknown>!rust_panic\n           2: 0x5d20 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x50cc - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x4ff9 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x563b - <unknown>!rust_begin_unwind\n           6: 0xb2aa - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xd5af - <unknown>!core::result::unwrap_failed::hdced1445f29366eb\n           8: 0x1252 - <unknown>!core::result::Result<T,E>::unwrap::hdfe7e347b5f4fe11\n           9: 0x132a - <unknown>!fs_metadata_file::main::h5faa27add9a915b7\n          10:  0x41d - <unknown>!core::ops::function::FnOnce::call_once::hd89ebcc7a8426fcb\n          11:  0x3f4 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::hceb2fe70d239edbf\n          12:  0xc04 - <unknown>!std::rt::lang_start::{{closure}}::he7238fd00b720269\n          13: 0x2e13 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xbaf - <unknown>!std::rt::lang_start::hcdef7ce21b5035d8\n          15: 0x13b9 - <unknown>!__main_void\n          16:  0x3cf - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/env_vars-many.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at env_vars-many.rs:5:3:\nassertion `left == right` failed\n  left: 0\n right: 3\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `env_vars-many.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x953a - <unknown>!__rust_start_panic\n           1: 0x938a - <unknown>!rust_panic\n           2: 0x9367 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x86d1 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x85fe - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x8c82 - <unknown>!rust_begin_unwind\n           6: 0xdc39 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xfcf1 - <unknown>!core::panicking::assert_failed_inner::h1349768c866a993e\n           8: 0x2849 - <unknown>!core::panicking::assert_failed::h9c5c9affffb4af8b\n           9: 0x47ad - <unknown>!env_vars_many::main::hff790114eea94640\n          10:  0xd67 - <unknown>!core::ops::function::FnOnce::call_once::h86952360e7047371\n          11:  0xd3e - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::hba3ec66bcb7ad2ca\n          12:  0xe1f - <unknown>!std::rt::lang_start::{{closure}}::hfd3304f14ceb180a\n          13: 0x6570 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xdca - <unknown>!std::rt::lang_start::h0dbdcd90bb8ac473\n          15: 0x4cb7 - <unknown>!__main_void\n          16:  0x36a - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/io_stderr-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_metadata-directory.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at fs_metadata-directory.rs:4:70:\ncalled `Result::unwrap()` on an `Err` value: Custom { kind: Uncategorized, error: \"failed to find a pre-opened file descriptor through which \\\"fs_metadata-directory.dir/directory\\\" could be opened\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_metadata-directory.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x5f1e - <unknown>!__rust_start_panic\n           1: 0x5d43 - <unknown>!rust_panic\n           2: 0x5d20 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x50cc - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x4ff9 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x563b - <unknown>!rust_begin_unwind\n           6: 0xb2aa - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xd5af - <unknown>!core::result::unwrap_failed::hdced1445f29366eb\n           8: 0x1252 - <unknown>!core::result::Result<T,E>::unwrap::h109f984d87b942ea\n           9: 0x132a - <unknown>!fs_metadata_directory::main::hf303967518b1cca6\n          10:  0x41d - <unknown>!core::ops::function::FnOnce::call_once::haff9ddecf1b8db14\n          11:  0x3f4 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h4a61af9c1bb5ad62\n          12:  0xc04 - <unknown>!std::rt::lang_start::{{closure}}::h4b148d00b186e299\n          13: 0x2e13 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xbaf - <unknown>!std::rt::lang_start::h1d00376fdf9bbcf7\n          15: 0x13b9 - <unknown>!__main_void\n          16:  0x3cf - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/env_args-some.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at env_args-some.rs:5:3:\nassertion `left == right` failed\n  left: 3\n right: 2\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `env_args-some.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x888c - <unknown>!__rust_start_panic\n           1: 0x86dc - <unknown>!rust_panic\n           2: 0x86b9 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x7a23 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x7950 - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x7fd4 - <unknown>!rust_begin_unwind\n           6: 0xd001 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xf0b9 - <unknown>!core::panicking::assert_failed_inner::h1349768c866a993e\n           8: 0x216b - <unknown>!core::panicking::assert_failed::h82ba1b545741b717\n           9: 0x3f89 - <unknown>!env_args_some::main::h00f13b4308bdea3b\n          10:  0xd2d - <unknown>!core::ops::function::FnOnce::call_once::ha80f79123386da1c\n          11:  0xd04 - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h0d39311547cfecfa\n          12:  0xde5 - <unknown>!std::rt::lang_start::{{closure}}::hcc49804f0adb5778\n          13: 0x5998 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          14:  0xd90 - <unknown>!std::rt::lang_start::hd389b7dab385d4c4\n          15: 0x40de - <unknown>!__main_void\n          16:  0x3aa - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/io_stdin-beowulf.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/env_vars-none.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/fs_rename-file.wasm",
+            "status": "FAIL",
+            "message": "thread 'main' panicked at fs_rename-file.rs:7:3:\nassertion failed: fs::rename(old_path, new_path).is_ok()\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nError: failed to run main module `fs_rename-file.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x530c - <unknown>!__rust_start_panic\n           1: 0x4e64 - <unknown>!rust_panic\n           2: 0x4e41 - <unknown>!std::panicking::rust_panic_with_hook::hc93abff18edee779\n           3: 0x41b5 - <unknown>!std::panicking::begin_panic_handler::{{closure}}::h922bcdd9c6fdedfb\n           4: 0x411a - <unknown>!std::sys_common::backtrace::__rust_end_short_backtrace::h2597d6ecb1d3419e\n           5: 0x475c - <unknown>!rust_begin_unwind\n           6: 0xa526 - <unknown>!core::panicking::panic_fmt::h35d9e7e9c02f9eb5\n           7: 0xaab1 - <unknown>!core::panicking::panic::h2d50353119445d1c\n           8:  0xafb - <unknown>!fs_rename_file::main::he994ec9aae15555f\n           9:  0x3d6 - <unknown>!core::ops::function::FnOnce::call_once::h920609390f341549\n          10:  0x3ad - <unknown>!std::sys_common::backtrace::__rust_begin_short_backtrace::h200a249da6742abc\n          11:  0x5b5 - <unknown>!std::rt::lang_start::{{closure}}::hd88c50386595f1fc\n          12: 0x2318 - <unknown>!std::rt::lang_start_internal::h394de9c4666f4612\n          13:  0x560 - <unknown>!std::rt::lang_start::h551123c5faf16879\n          14:  0xb1f - <unknown>!__main_void\n          15:  0x388 - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libstd/process_exit-1.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libstd/io_stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-working-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-false.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdout-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/fopen-directory-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/ftruncate.wasm",
+            "status": "FAIL",
+            "message": "Assertion failed: fd != -1 (ftruncate.c: main: 11)\nError: failed to run main module `ftruncate.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0: 0x376a - <unknown>!abort\n           1: 0x381d - <unknown>!__assert_fail\n           2:  0x3d4 - <unknown>!__original_main\n           3:  0x29f - <unknown>!_start\n       note: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libc/fopen-parent-directory.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/assert-true.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stderr-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/main.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_getres-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getentropy.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/clock_gettime-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-absent.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/stdin-hello.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "libc/getenv-present.wasm",
+            "status": "FAIL",
+            "message": "Assertion failed: strcmp(getenv(\"PRESENT\"), \"1\") == 0 (getenv-present.c: main: 6)\nError: failed to run main module `getenv-present.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x296 - <unknown>!abort\n           1:  0x2e8 - <unknown>!__assert_fail\n           2:  0x250 - <unknown>!__original_main\n           3:  0x1b4 - <unknown>!_start\n    2: wasm trap: wasm `unreachable` instruction executed\n"
+        },
+        {
+            "path": "libc/abort.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-monotonic.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/clock_get_res-realtime.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-success.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/proc_exit-failure.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdout.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdout.ts(20:1)\nError: failed to run main module `fd_stat_get-stdout.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x4c1 - <unknown>!<wasm function 9>\n           1:  0x6b4 - <unknown>!<wasm function 18>\n           2:  0x6c5 - <unknown>!<wasm function 19>\n    2: exit with invalid exit status outside of [0..126)\n"
+        },
+        {
+            "path": "core/sched_yield.wasm",
+            "status": "PASS",
+            "message": ""
+        },
+        {
+            "path": "core/fd_stat_get-stdin.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stdin.ts(22:1)\nError: failed to run main module `fd_stat_get-stdin.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x4c1 - <unknown>!<wasm function 9>\n           1:  0x6cd - <unknown>!<wasm function 18>\n           2:  0x6de - <unknown>!<wasm function 19>\n    2: exit with invalid exit status outside of [0..126)\n"
+        },
+        {
+            "path": "core/fd_stat_get-stderr.wasm",
+            "status": "FAIL",
+            "message": "abort:  in fd_stat_get-stderr.ts(20:1)\nError: failed to run main module `fd_stat_get-stderr.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x4c1 - <unknown>!<wasm function 9>\n           1:  0x6b4 - <unknown>!<wasm function 18>\n           2:  0x6c5 - <unknown>!<wasm function 19>\n    2: exit with invalid exit status outside of [0..126)\n"
+        },
+        {
+            "path": "core/start.wasm",
+            "status": "PASS",
+            "message": ""
+        }
+    ]
+}
