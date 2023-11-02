@@ -1,7 +1,7 @@
 {
     "runtime": {
-        "name": "wasmer",
-        "version": "4.2.3"
+        "name": "wasmtime-cli",
+        "version": "14.0.4"
     },
     "results": [
         {
@@ -76,8 +76,8 @@
         },
         {
             "path": "libstd/io_stderr-hello.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- io_stderr-hello.stderr\t2023-11-02 00:18:01.146718202 +0000\n+++ /tmp/tmp.ZZDetUG1ll/stderr\t2023-11-02 00:18:04.414729383 +0000\n@@ -1 +1,11 @@\n+warning: this CLI invocation of Wasmtime will be parsed differently in future\n+         Wasmtime versions -- see this online issue for more information:\n+         https://github.com/bytecodealliance/wasmtime/issues/7384\n+\n+         Wasmtime will now execute with the old (<= Wasmtime 13) CLI parsing,\n+         however this behavior can also be temporarily configured with an\n+         environment variable:\n+\n+         - WASMTIME_NEW_CLI=0 to indicate old semantics are desired and silence this warning, or\n+         - WASMTIME_NEW_CLI=1 to indicate new semantics are desired and use the latest behavior\n Hello, stderr!\n"
         },
         {
             "path": "libstd/main.wasm",
@@ -111,8 +111,8 @@
         },
         {
             "path": "libstd/io_stderr-beowulf.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- io_stderr-beowulf.stderr\t2023-11-02 00:18:01.138718174 +0000\n+++ /tmp/tmp.S5QhXnWETu/stderr\t2023-11-02 00:18:04.830730806 +0000\n@@ -1,3 +1,13 @@\n+warning: this CLI invocation of Wasmtime will be parsed differently in future\n+         Wasmtime versions -- see this online issue for more information:\n+         https://github.com/bytecodealliance/wasmtime/issues/7384\n+\n+         Wasmtime will now execute with the old (<= Wasmtime 13) CLI parsing,\n+         however this behavior can also be temporarily configured with an\n+         environment variable:\n+\n+         - WASMTIME_NEW_CLI=0 to indicate old semantics are desired and silence this warning, or\n+         - WASMTIME_NEW_CLI=1 to indicate new semantics are desired and use the latest behavior\n Hwæt. We Gardena in geardagum,\n þeodcyninga, þrym gefrunon,\n hu ða æþelingas ellen fremedon.\n"
         },
         {
             "path": "libstd/fs_rename-file.wasm",
@@ -126,8 +126,8 @@
         },
         {
             "path": "core/fd_stat_get-stdout.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "warning: this CLI invocation of Wasmtime will be parsed differently in future\n         Wasmtime versions -- see this online issue for more information:\n         https://github.com/bytecodealliance/wasmtime/issues/7384\n\n         Wasmtime will now execute with the old (<= Wasmtime 13) CLI parsing,\n         however this behavior can also be temporarily configured with an\n         environment variable:\n\n         - WASMTIME_NEW_CLI=0 to indicate old semantics are desired and silence this warning, or\n         - WASMTIME_NEW_CLI=1 to indicate new semantics are desired and use the latest behavior\nabort:  in fd_stat_get-stdout.ts(20:1)\nError: failed to run main module `fd_stat_get-stdout.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x4c1 - <unknown>!<wasm function 9>\n           1:  0x6b4 - <unknown>!<wasm function 18>\n           2:  0x6c5 - <unknown>!<wasm function 19>\n    2: exit with invalid exit status outside of [0..126)\n"
         },
         {
             "path": "core/start.wasm",
@@ -136,8 +136,8 @@
         },
         {
             "path": "core/fd_stat_get-stderr.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "warning: this CLI invocation of Wasmtime will be parsed differently in future\n         Wasmtime versions -- see this online issue for more information:\n         https://github.com/bytecodealliance/wasmtime/issues/7384\n\n         Wasmtime will now execute with the old (<= Wasmtime 13) CLI parsing,\n         however this behavior can also be temporarily configured with an\n         environment variable:\n\n         - WASMTIME_NEW_CLI=0 to indicate old semantics are desired and silence this warning, or\n         - WASMTIME_NEW_CLI=1 to indicate new semantics are desired and use the latest behavior\nabort:  in fd_stat_get-stderr.ts(20:1)\nError: failed to run main module `fd_stat_get-stderr.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x4c1 - <unknown>!<wasm function 9>\n           1:  0x6b4 - <unknown>!<wasm function 18>\n           2:  0x6c5 - <unknown>!<wasm function 19>\n    2: exit with invalid exit status outside of [0..126)\n"
         },
         {
             "path": "core/clock_get_res-realtime.wasm",
@@ -146,8 +146,8 @@
         },
         {
             "path": "core/fd_stat_get-stdin.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "warning: this CLI invocation of Wasmtime will be parsed differently in future\n         Wasmtime versions -- see this online issue for more information:\n         https://github.com/bytecodealliance/wasmtime/issues/7384\n\n         Wasmtime will now execute with the old (<= Wasmtime 13) CLI parsing,\n         however this behavior can also be temporarily configured with an\n         environment variable:\n\n         - WASMTIME_NEW_CLI=0 to indicate old semantics are desired and silence this warning, or\n         - WASMTIME_NEW_CLI=1 to indicate new semantics are desired and use the latest behavior\nabort:  in fd_stat_get-stdin.ts(22:1)\nError: failed to run main module `fd_stat_get-stdin.wasm`\n\nCaused by:\n    0: failed to invoke command default\n    1: error while executing at wasm backtrace:\n           0:  0x4c1 - <unknown>!<wasm function 9>\n           1:  0x6cd - <unknown>!<wasm function 18>\n           2:  0x6de - <unknown>!<wasm function 19>\n    2: exit with invalid exit status outside of [0..126)\n"
         },
         {
             "path": "core/sched_yield.wasm",
@@ -196,8 +196,8 @@
         },
         {
             "path": "libc/assert-false.wasm",
-            "status": "FAIL",
-            "message": "--- assert-false.status\t2023-11-02 00:18:00.015495876 +0000\n+++ /tmp/tmp.cxqbbAX8qO/status\t2023-11-02 00:18:10.159613261 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/exit-failure.wasm",
@@ -216,8 +216,8 @@
         },
         {
             "path": "libc/abort.wasm",
-            "status": "FAIL",
-            "message": "--- abort.status\t2023-11-02 00:18:00.015495876 +0000\n+++ /tmp/tmp.ADyuMq6Jgf/status\t2023-11-02 00:18:10.591615987 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "status": "PASS",
+            "message": ""
         },
         {
             "path": "libc/fopen-working-directory.wasm",
@@ -251,8 +251,8 @@
         },
         {
             "path": "libc/stderr-hello.wasm",
-            "status": "PASS",
-            "message": ""
+            "status": "FAIL",
+            "message": "--- stderr-hello.stderr\t2023-11-02 00:18:01.082717983 +0000\n+++ /tmp/tmp.2vLWVbxCNe/stderr\t2023-11-02 00:18:05.630733543 +0000\n@@ -1 +1,11 @@\n+warning: this CLI invocation of Wasmtime will be parsed differently in future\n+         Wasmtime versions -- see this online issue for more information:\n+         https://github.com/bytecodealliance/wasmtime/issues/7384\n+\n+         Wasmtime will now execute with the old (<= Wasmtime 13) CLI parsing,\n+         however this behavior can also be temporarily configured with an\n+         environment variable:\n+\n+         - WASMTIME_NEW_CLI=0 to indicate old semantics are desired and silence this warning, or\n+         - WASMTIME_NEW_CLI=1 to indicate new semantics are desired and use the latest behavior\n Hello, stderr!\n"
         },
         {
             "path": "libc/exit-success.wasm",
