@@ -37,7 +37,7 @@
         {
             "path": "libc/abort.wasm",
             "status": "FAIL",
-            "message": "--- abort.status\t2023-11-15 00:18:49.173814442 +0000\n+++ /tmp/tmp.6zmdWSnhHV/status\t2023-11-15 00:18:53.401872984 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- abort.status\t2023-11-16 00:19:05.919015863 +0000\n+++ /tmp/tmp.UdTWUXxzX0/status\t2023-11-16 00:19:09.159036893 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/ftruncate.wasm",
@@ -87,7 +87,7 @@
         {
             "path": "libc/assert-false.wasm",
             "status": "FAIL",
-            "message": "--- assert-false.status\t2023-11-15 00:18:49.173814442 +0000\n+++ /tmp/tmp.rMgjB9VfkU/status\t2023-11-15 00:18:53.909879410 +0000\n@@ -1 +1 @@\n-134\n+1\n"
+            "message": "--- assert-false.status\t2023-11-16 00:19:05.919015863 +0000\n+++ /tmp/tmp.1ncfoTYo6U/status\t2023-11-16 00:19:09.591039687 +0000\n@@ -1 +1 @@\n-134\n+1\n"
         },
         {
             "path": "libc/main.wasm",
